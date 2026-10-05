@@ -1,0 +1,8 @@
+from p_home import HOME
+from p_club import CLUB
+from p_deportes import DEPORTES
+from p_eventos import EVENTOS
+from p_rest import GASTRONOMIA, HOSPEDAJE, SOSTENIBILIDAD, CONVENIOS, CONTACTO
+from p_asoc import ASOCIADOS
+from p_prop import PROPUESTA
+PAGES = [HOME, CLUB, DEPORTES, EVENTOS, GASTRONOMIA, HOSPEDAJE, SOSTENIBILIDAD, CONVENIOS, CONTACTO, ASOCIADOS, PROPUESTA]
