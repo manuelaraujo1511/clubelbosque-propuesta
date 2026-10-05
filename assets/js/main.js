@@ -10,7 +10,7 @@
   // Autor de la propuesta (quitar junto con el distintivo al pasar a producción)
   var AUTHOR = "Manuel Araujo";
   var AUTHOR_EMAIL = "manuel.araujo1511@gmail.com";
-  var AUTHOR_WA = "+573137130787";
+  var AUTHOR_WA = "573137130787";
   var AUTHOR_WA_MSG = encodeURIComponent("Hola Manuel, vi la propuesta del nuevo sitio del Club Campestre El Bosque");
 
   var ICON = {
