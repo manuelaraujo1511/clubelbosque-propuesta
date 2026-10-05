@@ -25,7 +25,7 @@ body=f"""
 <section class="page-hero">
   <img src="@U/2020/03/f_golf-12-006.jpg" alt="">
   <div class="container">
-    <span class="eyebrow" style="color:var(--gold-400)">Propuesta · <span data-year></span></span>
+    <span class="eyebrow" style="color:var(--gold-400)">Propuesta de Manuel Araujo · <span data-year></span></span>
     <h1>Un sitio a la altura del club</h1>
     <p class="lead">Revisamos todas las páginas de clubelbosque.com.co. Este documento resume lo que encontramos y cómo el nuevo sitio lo resuelve.</p>
     <div class="hero-actions" style="margin-top:1.5rem"><a class="btn btn--primary" href="index.html">Ver el nuevo sitio</a><a class="btn btn--ghost" href="#hallazgos">Ver hallazgos</a></div>
@@ -85,6 +85,14 @@ body=f"""
       <div class="step reveal reveal-d2"><h3>Desarrollo</h3><p>Gestor de contenidos, integración de reservas, pagos y portal del asociado.</p></div>
       <div class="step reveal reveal-d3"><h3>Lanzamiento</h3><p>Migración, SEO, analítica y capacitación del equipo del club.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section" id="autor">
+  <div class="container">
+    <div class="section-head reveal"><div><span class="eyebrow">Quién presenta esta propuesta</span><h2>Manuel Araujo</h2>
+      <p class="lead">Este prototipo fue diseñado y desarrollado por Manuel Araujo como propuesta independiente para el Club Campestre El Bosque. No es el sitio oficial del club: los textos e imágenes provienen de clubelbosque.com.co y se usan solo para ilustrar la propuesta.</p></div></div>
+    <div class="hero-actions reveal" data-author-contact></div>
   </div>
 </section>
 """

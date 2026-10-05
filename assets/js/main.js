@@ -7,6 +7,12 @@
   var WA = "573164341805";
   var WA_MSG = encodeURIComponent("Hola, quisiera información sobre el Club Campestre El Bosque");
 
+  // Autor de la propuesta (quitar junto con el distintivo al pasar a producción)
+  var AUTHOR = "Manuel Araujo";
+  var AUTHOR_EMAIL = "manuel.araujo1511@gmail.com";
+  var AUTHOR_WA = "+573137130787";
+  var AUTHOR_WA_MSG = encodeURIComponent("Hola Manuel, vi la propuesta del nuevo sitio del Club Campestre El Bosque");
+
   var ICON = {
     chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
@@ -133,7 +139,8 @@
         "<li>Atención de domingo a domingo</li>" +
       "</ul></div>" +
     "</div>" +
-    '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + ' Club Campestre El Bosque · Entidad privada sin ánimo de lucro</span><span><a href="propuesta.html">Propuesta de rediseño</a> · <a href="contacto.html">Política de datos</a></span></div></div>';
+    '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + ' Club Campestre El Bosque · Entidad privada sin ánimo de lucro</span><span><a href="propuesta.html">Propuesta de rediseño</a> · <a href="contacto.html">Política de datos</a></span></div>' +
+    '<p class="proposal-credit">Prototipo no oficial elaborado por <strong>' + AUTHOR + '</strong> como propuesta para el Club Campestre El Bosque · <a href="mailto:' + AUTHOR_EMAIL + '">' + AUTHOR_EMAIL + '</a></p></div>';
   document.body.appendChild(footer);
 
   // Flotantes: WhatsApp, accesibilidad, barra móvil
@@ -189,8 +196,14 @@
   if (page !== "propuesta") {
     var badge = document.createElement("a");
     badge.className = "proposal-badge"; badge.href = "propuesta.html";
-    badge.innerHTML = "<strong>Propuesta de rediseño</strong><span>Prototipo · Ver detalles →</span>";
+    badge.innerHTML = "<strong>Propuesta de rediseño</strong><span>por " + AUTHOR + " · Ver detalles →</span>";
     document.body.appendChild(badge);
+  }
+  var authorBox = document.querySelector("[data-author-contact]");
+  if (authorBox) {
+    authorBox.innerHTML =
+      '<a class="btn btn--primary" href="https://wa.me/' + AUTHOR_WA + "?text=" + AUTHOR_WA_MSG + '" target="_blank" rel="noopener">' + ICON.wa + " Escribir por WhatsApp</a>" +
+      '<a class="btn btn--ghost" href="mailto:' + AUTHOR_EMAIL + "?subject=" + encodeURIComponent("Propuesta sitio web Club El Bosque") + '">' + AUTHOR_EMAIL + "</a>";
   }
 
   // Fallback de imágenes
